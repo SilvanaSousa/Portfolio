@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <section id="home">
+        <header class="background-header">
+            <nav>
+                <div class="container">
+
+
+
+                    <ul class="menu-desktop">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                    <div class="menu-mobile">
+                        <div class="menu-bar">
+                            <i class="fa fa-navicon icon-menu" style="font-size: 25px;"></i>
+                        </div>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#projetos">Projetos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+            </nav>
+
+
+
+            <div class="container">
+                <div class="perfil"></div>
+                <div class="texto">
+                    <h1>I'm Silvana Sousa</h1>
+                    <span class="subtitulo-perfil">Desenvolvedor</span><span class="cursor">l</span>
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+    </section>
+
+    <div id="linha-horizontal"></div>
+
+    <section id="sobre">
+
+
+        <div class="container">
+
+
+
+
+            <div class="sobre01">
+                <div class="imagem-sobre">
+                    <img class="img-estudante" src="./assets/img/estudante.png">
+
+                    <h1 class="sobre">SOBRE MIM</h1>
+                </div>
+                <div class="texto-sobre">
+                    <span>Sou estudante de Analise e desenvolvimento de sistemas,
+                        Antes de inciar a faculdade já estudava programação na linguagem Java, Python e C++.
+                        Foi a onde me encontrei no mundo da tecnologia e almejo por me aprofundar cada vez mais.
+                        Tenho desejo um imenso de ajudar a solucionar problemas e contribuir com ideias para melhoria da
+                        empresa. </span>
+                    <span class="cursor1">_</span>
+
+                </div>
+            </div><!--sobre01-->
+
+        </div>
+
+
+    </section>
+
+    <div id="linha-horizontal"></div>
+
+    <section id="projetos">
+
+        <div class="container">
+
+            <h1>MEUS PROJETOS</h1>
+
+
+            <div class="projetos-flex">
+
+                <div class="projeto-single">
+                    <a href="https://site-hotelaria.vercel.app/" target="_blank">
+                        <img class="box" src="assets/img/projeto01.png">
+                    </a>
+                </div>
+
+                <div class="projeto-single">
+                    <a href="https://landing-page-gamma-jet.vercel.app/" target="_blank">
+                        <img class="box" src="assets/img/projeto02.png">
+                    </a>
+                </div>
+
+                <div class="projeto-single">
+                    <a href="https://lista-de-tarefas-one-fawn.vercel.app/" target="_bla
+                ">
+                        <img class="box" src="assets/img/img-tarefas.png">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <section id="contato" class="parallax">
+        <div class="overlay"></div>
+        <div class="texto-parallax">
+            <h2>Entre em contato</h2>
+            <p>Conheça meu trabalho.</p>
+
+            <div>
+                <form class="container-formulario">
+                    <h1>ENTRE EM CONTATO</h1>
+                    <input type="text" required id="fname" name="fname" placeholder="Digite seu nome Completo"><br>
+                    <input type="email" required id="email" name="email" placeholder="Digite seu E-mail"><br>
+                    <input type="telefone" required id="telefone" name="telefone" placeholder="Digite seu Telefone"><br>
+                    <button type="button">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <div id="linha-horizontal"></div>
+
+    <footer class="rodape">
+        <div class="container rodape-flex">
+
+            <div class="rodape-left">
+                <p>Todos os direitos reservados</p>
+            </div>
+
+            <div class="rodape-right">
+
+                <p></p>Redes Sociais</p>
+                <a href="mailto:silvana.cdp15@gmail.com" target="_blank">
+                    <img class="icone" src="assets/img/gmail.png">
+                </a>
+
+                <a href="https://linkwhats.app/53a658" target="_blank">
+                    <img class="icone" src="assets/img/whatsapp.png">
+                </a>
+
+                <a href="https://www.linkedin.com/in/silvana-de-sousa-cavalcante-90035b208/" target="_blank">
+                    <img class="icone" src="assets/img/linkedin.png">
+                </a>
+
+                <a href="https://www.facebook.com/silvana.desousa.338" target="_blank">
+                    <img class="icone" src="assets/img/facebook.png">
+                </a>
+
+            </div>
+
+
+
+
+        </div>
+    </footer>
+    <script src="/assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+         $(function(){
+            $('.menu-bar').click(function(){
+                var el = $(this).parent().find('ul')
+                el.slideToggle("slow")
+            })
+        })
+    </script>
+
+</body>
+
+</html>
